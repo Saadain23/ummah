@@ -6,6 +6,25 @@ body {
     padding: 0;
 }
 
+.top-header {
+    background-color: #FFD700; 
+    padding: 5px 10px;
+    text-align: left;
+}
+
+.top-header a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: small;
+}
+
+.top-header img {
+    width: 24px;
+    height: auto;
+    vertical-align: middle;
+}
+
 header {
     background-color: #1c1c1c;
     padding: 20px;
@@ -57,7 +76,7 @@ header {
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 70px;
+        top: 110px;
         gap: 0;
         flex-direction: column;
         background-color: #1c1c1c;
@@ -320,6 +339,27 @@ iframe {
 
 .feedback-button:hover {
     background-color: #e6c300;
+}
+
+@media (max-width: 768px) {
+    #contact-info-card {
+        padding: 35px;
+    }
+
+    iframe {
+        margin-right: 0; 
+        height: 250px;
+        border-radius: 10px;
+    }
+
+    .contact-details {
+        width: 100%; 
+        max-width: none;
+    }
+
+    .contact-details p, .feedback-button {
+        text-align: center;
+    }
 }
 
 
