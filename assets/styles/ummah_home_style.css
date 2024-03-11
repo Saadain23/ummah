@@ -198,7 +198,7 @@ h2 {
 }
 
 .donation-card {
-    background-color: #121212;
+    background-color: #1c1c1c;
     border-radius: 15px;
     padding: 20px;
     color: white;
@@ -247,6 +247,38 @@ h2 {
     color: white;
     font-size: 1.5em;
 }
+
+@media (max-width: 768px) {
+    .donation-content {
+        flex-direction: column; 
+    }
+
+    .donation-text, .donation-card {
+        width: 100%;
+    }
+
+    .donation-card {
+        height: auto; 
+        margin-top: 20px;
+    }
+
+    .percent {
+        width: 100%; 
+        max-width: 220px; 
+        margin: 0 auto;
+    }
+
+    .percent svg {
+        width: 100%; 
+        max-width: 220px;
+        height: auto;
+    }
+
+    .progress-text {
+        font-size: 1.5em;
+    }
+}
+
 
 .donation-images {
     width: 100%;
