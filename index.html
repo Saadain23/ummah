@@ -9,6 +9,16 @@
     <link rel="stylesheet" href="assets/styles/ummah_home_style.css">
 </head>
 <body>
+    <div class="top-header">
+        <a href="https://www.facebook.com/p/Ummah-Moskeija-100088772430337/" target="_blank" aria-label="Facebook">
+            <img src="assets/images/facebook_logo.svg" alt="Facebook">
+            Ummah Moskeija
+        </a>
+        <a href="https://www.instagram.com/ummahmoskeija?igsh=ZjhhZzBsMncwb2lq" target="_blank" aria-label="Instagram">
+            <img src="assets/images/instagram_logo.svg" alt="Instagram">
+            @ummahmoskeija
+        </a>
+    </div>
     <header>
         <div class="logo-title-container">
             <img src="assets/images/ummah_logo.png" alt="Ummah Mosque Logo" id="header-logo">
@@ -77,15 +87,7 @@
     <section id="timetable">
         <h2>Prayer Timetable</h2>
         <!-- Embed or link to the prayer timetable -->
-        <iframe id="msi_161" src="https://salattimes.com/..."></iframe>
-        <script>
-            var msi_161 = document.getElementById("msi_161");
-            var msi_161_hu = function() {
-                msi_161.style.height = msi_161.offsetWidth * .6 + "px";
-            };
-            window.addEventListener("resize", msi_161_hu, false);
-            msi_161_hu();
-        </script>
+        <iframe id="sti_981" src="https://salattimes.com/salat-times-embed/?t=daily&l=Helsinki%2C%20FI&lt=60.2289&ln=24.8964&m=MWL&tf=24h&tz=Europe%2FHelsinki" style="width:100%;height:400px;border:0;"></iframe><script>var sti_981=document.getElementById("sti_981");window.addEventListener("message",(e)=>{if(e.origin!=="https://salattimes.com"||e.source!==sti_981.contentWindow)return;sti_981.style.height=e.data.height+"px";},false);</script>
     </section>
 
     <section id="about">
@@ -111,9 +113,8 @@
             <!-- Add links to social media platforms -->
             <a href="https://www.facebook.com/p/Ummah-Moskeija-100088772430337/">Facebook</a>
             <a href="https://www.instagram.com/ummahmoskeija?igsh=ZjhhZzBsMncwb2lq">Instagram</a>
-            <!-- Add more as needed -->
         </div>
-        <p>&copy; 2024 Ummah Mosque. All rights reserved.</p>
+        <p>&copy; 2024 Ummah Islamilainen Yhdyskunta. All rights reserved.</p>
     </footer>
 
     <script src="assets/scripts/ummah_home_scripts.js"></script>
