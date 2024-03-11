@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ummah Mosque</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="assets/styles/ummah_home_style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-title-container">
+            <img src="assets/images/ummah_logo.png" alt="Ummah Mosque Logo" id="header-logo">
+            <h1>Ummah Mosque</h1>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="#donation" class="nav-link">Donation</a></li>
+                <li class="nav-item"><a href="#news" class="nav-link">News</a></li>
+                <li class="nav-item"><a href="#timetable" class="nav-link">Timetable</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact Us</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="gallery">
+        <!-- Placeholder for images; replace with actual images -->
+        <img src="assets/images/mosque1.jpg" class="slide showing">
+        <img src="assets/images/mosque2.jpg" class="slide">
+        <img src="assets/images/mosque3.jpg" class="slide">
+    </section>
+
+    <section id="donation">
+        <h2>Support Our Mosque</h2>
+        <div class="donation-content">    
+            <div class="donation-text">
+                <p>Every brick laid with sincerity is a step towards Jannah. Help us build not just a mosque, but a home for hearts seeking guidance. Let your charity be a shade for you on the Day of Judgment. Invest in your hereafter by contributing to our mosque today!</p>
+            </div>
+            <div class="donation-card">
+                <div class="progress-container">
+                    <div class="percent">
+                        <svg viewBox="0 0 220 220">
+                            <circle class="progress-back" cx="110" cy="110" r="100" fill="none" stroke="#1c1c1c" stroke-width="15"></circle>
+                            <circle class="progress-bar" cx="110" cy="110" r="100" fill="none" stroke="#FFD700" stroke-width="15" stroke-dasharray="629" stroke-dashoffset="629"></circle>
+                        </svg>
+                        <div class="progress-text">50%</div>
+                    </div>
+                    <div class="goal-text">Goal: 520,000€</div>
+                </div>
+            </div>
+        </div>
+        <div class="donation-images">
+            <div class="image-card"><img src="qr-code.png" alt="Donate via QR Code"></div>
+            <div class="image-card"><img src="barcode.png" alt="Donate via Barcode"></div>
+        </div>
+    </section>    
+
+
+    <section id="news">
+        <h2>News and Updates</h2>
+        <!-- Placeholder for news items -->
+        <article>
+            <h3>News Item 1</h3>
+            <p>Details about news item 1...</p>
+        </article>
+        <!-- Add more news items as needed -->
+    </section>
+
+    <section id="timetable">
+        <h2>Prayer Timetable</h2>
+        <!-- Embed or link to the prayer timetable -->
+        <iframe id="msi_161" src="https://salattimes.com/..."></iframe>
+        <script>
+            var msi_161 = document.getElementById("msi_161");
+            var msi_161_hu = function() {
+                msi_161.style.height = msi_161.offsetWidth * .6 + "px";
+            };
+            window.addEventListener("resize", msi_161_hu, false);
+            msi_161_hu();
+        </script>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Information about the mosque...</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div id="contact-info-card">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1984.6018230840365!2d24.9604513!3d60.2084098!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468df2f3f69a8b59%3A0x400b3717a247890!2sHernepellonkuja%206%2C%2000560%20Helsinki%2C%20Finland!5e0!3m2!1sen!2sus!4v1660146514286!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="contact-details">
+                <p><img src="assets/images/location_icon.svg" alt="Location" class="icon">Ummah Moskeija<br>Hernepellonkuja 6, 00560 Helsinki</p>
+                <p><img src="assets/images/call_icon.svg" alt="Location" class="icon">(+358) 123456789</p>
+                <p><img src="assets/images/email_icon.svg" alt="Location" class="icon">Ummahmoskeija@gmail.com</p>
+                <a href="https://forms.gle/m3mmitjy6zj6TatY7" class="feedback-button">Send Feedback</a>
+            </div>
+        </div>
+    </section>    
+
+    <footer>
+        <div id="social-media">
+            <!-- Add links to social media platforms -->
+            <a href="https://www.facebook.com/p/Ummah-Moskeija-100088772430337/">Facebook</a>
+            <a href="https://www.instagram.com/ummahmoskeija?igsh=ZjhhZzBsMncwb2lq">Instagram</a>
+            <!-- Add more as needed -->
+        </div>
+        <p>&copy; 2024 Ummah Mosque. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/scripts/ummah_home_scripts.js"></script>
+</body>
+</html>
