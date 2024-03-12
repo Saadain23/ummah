@@ -58,7 +58,7 @@
                 <div class="progress-container">
                     <div class="percent">
                         <svg viewBox="0 0 220 220">
-                            <circle class="progress-back" cx="110" cy="110" r="100" fill="none" stroke="#1c1c1c" stroke-width="15"></circle>
+                            <circle class="progress-back" cx="110" cy="110" r="100" fill="none" stroke="#4c4c4c" stroke-width="15"></circle>
                             <circle class="progress-bar" cx="110" cy="110" r="100" fill="none" stroke="#FFD700" stroke-width="15" stroke-dasharray="629" stroke-dashoffset="629"></circle>
                         </svg>
                         <div class="progress-text">50%</div>
@@ -68,8 +68,38 @@
             </div>
         </div>
         <div class="donation-images">
-            <div class="image-card"><img src="qr-code.png" alt="Donate via QR Code"></div>
-            <div class="image-card"><img src="barcode.png" alt="Donate via Barcode"></div>
+            <div class="image-card">
+                <p class="card-text">Support us with MobilePay:</p>
+                <img src="assets/images/mobilepay_qr.jpeg" alt="Donate via QR Code">
+            </div>
+            <div class="details-card">
+                <p class="card-text">Direct Bank Transfer Details :</p>
+                <div class="bank-details">
+                    <div>
+                        <span>IBAN:</span>
+                        <code id="iban-value" data-value="FI91 8146 9710 2785 31">FI91 8146 9710 2785 31</code>
+                        <button class="copy-btn" onclick="copyToClipboard('iban-value')">Copy</button>
+                    </div>
+                    <div>
+                        <span>BIC:</span>
+                        <code id="bic-value" data-value="DABAFIHH">DABAFIHH</code>
+                        <button class="copy-btn" onclick="copyToClipboard('bic-value')">Copy</button>
+                    </div>
+                    <div>
+                        <span>Recipient:</span>
+                        <code id="recipient-value" data-value="Ummah Rahma">Ummah Rahma</code>
+                        <button class="copy-btn" onclick="copyToClipboard('recipient-value')">Copy</button>
+                    </div>
+                    <div>
+                        <span>Reference:</span>
+                        <code id="reference-value" data-value="109008">109008</code>
+                        <button class="copy-btn" onclick="copyToClipboard('reference-value')">Copy</button>
+                    </div>
+                </div>
+                <div class="barcode-container">
+                    <img alt='Barcode' src='https://barcode.tec-it.com/barcode.ashx?data=491814697102785310000500000000000000000000109008240101&translate-esc=on' class="barcode"/>
+                </div>
+            </div>
         </div>
     </section>    
 
@@ -88,6 +118,13 @@
         <h2>Prayer Timetable</h2>
         <!-- Embed or link to the prayer timetable -->
         <iframe id="sti_981" src="https://salattimes.com/salat-times-embed/?t=daily&l=Helsinki%2C%20FI&lt=60.2289&ln=24.8964&m=MWL&tf=24h&tz=Europe%2FHelsinki" style="width:100%;height:400px;border:0;"></iframe><script>var sti_981=document.getElementById("sti_981");window.addEventListener("message",(e)=>{if(e.origin!=="https://salattimes.com"||e.source!==sti_981.contentWindow)return;sti_981.style.height=e.data.height+"px";},false);</script>
+        <div class="pdf-preview-card">
+            <img src="assets/files/thumbnail.png" alt="PDF Preview" class="pdf-thumbnail">
+            <div class="text-download-container">
+                <p>Check out the detailed prayer timetable by The Islamic Rahma Centre , that we use for the year 2024.</p>
+                <a href="assets/files/ummah_salat_timetable.pdf" class="download-button" download>Download Timetable</a>
+            </div>
+        </div>
     </section>
 
     <section id="about">
