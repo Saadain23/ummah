@@ -4,12 +4,18 @@ body {
     color: white;
     margin: 0;
     padding: 0;
+    padding-top: 120px;
 }
 
 .top-header {
-    background-color: #FFD700; 
+    background-color: #FFD700;
     padding: 5px 10px;
     text-align: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
 }
 
 .top-header a {
@@ -31,6 +37,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1000;
 }
 
 .logo-title-container {
@@ -40,7 +52,7 @@ header {
 
 #header-logo {
     height: 50px; 
-    margin-right: 20px; 
+    margin-right: 10px; 
 }
 
 .hamburger {
@@ -279,27 +291,108 @@ h2 {
     }
 }
 
+/* Qr code and Barcode cards*/
 
 .donation-images {
-    width: 100%;
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 20px;
 }
 
-.image-card {
+.image-card, .details-card {
     background-color: #1c1c1c;
     border-radius: 15px;
     padding: 10px;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    color: white;
+    margin-right: 10px;
+    margin-left: 15px;
+    margin-bottom: 10px;
 }
 
 .image-card img {
-    width: auto;
-    height: 80px; 
-    border-radius: 10px; 
+    height: 220px;
+    border-radius: 10px;
+    margin: 15px;
 }
 
+.details-card {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.details-card .bank-details {
+    width: 70%;
+}
+
+.details-card .bank-details div {
+    background-color: #333; 
+    padding: 5px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.details-card .bank-details code {
+    color: #FFD700;
+}
+
+.barcode-container {
+    text-align: center;
+    margin-top: 20px;
+    margin: 10px;
+    width: 90%;
+}
+
+.barcode {
+    max-width: 100%;
+    height: auto;
+    width: 95%;
+    border: 10px solid white;
+}
+
+.copy-btn {
+    background-color: #FFD700;
+    color: #1c1c1c;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.copy-btn:hover {
+    background-color: #e6c300;
+}
+
+@media (max-width: 768px) {
+    .image-card, .details-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+.icon img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    transition: filter 0.3s;
+}
+
+.icon:active img {
+    filter: brightness(0.8);
+}
 
 article {
     margin-bottom: 20px;
@@ -333,6 +426,8 @@ iframe {
     gap: 20px;
 }
 
+/*Prayer timetable - Embedding*/
+
 iframe {
     max-width: 600px; 
     width: 100%; 
@@ -341,6 +436,72 @@ iframe {
     margin-right: 20px;
     flex-grow: 1;
 }
+
+/*Prayer timetable - pdf donwload card*/
+
+.pdf-preview-card {
+    background-color: #1c1c1c;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 720px;
+    margin: 20px auto;
+}
+
+.pdf-thumbnail {
+    width: 50%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.text-download-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.download-button {
+    background-color: #FFD700;
+    color: #1c1c1c;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.download-button:hover {
+    background-color: #cca300;
+}
+
+@media (max-width: 768px) {
+    .pdf-preview-card {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .pdf-thumbnail {
+        width: 80%;
+        margin: 0;
+    }
+
+    .text-download-container {
+        width: 100%;
+        align-items: center;
+    }
+}
+
+
+/*Contact Us Section*/
 
 .contact-details p {
     display: flex;
@@ -394,6 +555,7 @@ iframe {
     }
 }
 
+/*Footer*/
 
 #social-media a {
     color: #FFD700;
